@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>📸 Demo Photo Gallery</h1>
+
+    <!-- Gallery Section -->
+    <aside class="gallery">
+      <img src="img/pic1.jpg" alt="Photo 1" onclick="openLightbox(this)" />
+      <img src="img/pic2.jpg" alt="Photo 2" onclick="openLightbox(this)" />
+      <img src="img/pic3.jpg" alt="Photo 3" onclick="openLightbox(this)" />
+    </aside>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <span class="close">&times;</span>
+      <img class="lightbox-content" id="lightboxImage" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
